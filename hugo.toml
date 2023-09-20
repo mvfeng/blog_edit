@@ -1,0 +1,95 @@
+baseurl = "/"
+title = "94c小站"
+languageCode = "zh-cn"
+paginate = "10" # 列表页文章数
+theme = "Mainroad"
+# hasCJKLanguage = true # 超级重要中文网站一定要开！！！
+disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+[Author] # 作者
+  name = "94c社区"
+  bio = "大家好，我是94c小站"
+  avatar = "img/nav.png"
+
+[Params]
+  description = "94c小站是一个技术和资源分享的网站" # meta标签中的介绍
+  copyright = "转载请著名出处"
+  opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
+  twitter_cards = true # Enable Twitter Cards if true
+  readmore = true # 显示阅读更多的按钮
+  authorbox = true # 显示作者窗口
+  toc = true # Enable Table of Contents
+  pager = true # 开启导航栏（上一篇下一篇）
+  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+  mainSections = ["post", "blog", "news"] # 指定要在主页和“最近的文章”小部件上显示的部分页面
+  dateformat = "2006-01-02" # 显示的日期格式
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+  customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
+
+  # DEPRECATED PARAMS
+  subtitle = "94c小站" # Deprecated in favor of .Site.Params.logo.subtitle
+  highlightColor = "" # Deprecated in favor of .Site.Params.style.vars.highlightColor
+
+[Params.style.vars]
+  highlightColor = "#39f" # Override highlight color #e22d30
+
+  # Override font-family sets
+  # Take care of different quotes OR escaping symbols in these params if necessary
+  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
+  # Secondary font-family set responsible for pre, code, kbd, and samp tags font
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+
+[Params.logo]
+  image = "img/nav.png" # Logo image. Path relative to "static"
+  title = "94c小站" # Logo title, otherwise will use site title
+  subtitle = "94c小站是一个技术和资源分享的网站" # Logo subtitle
+
+[Params.thumbnail]
+  visibility = ["list", "post"] # Control thumbnail visibility
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+  recent_num = 6 # Set the number of articles in the "Recent articles" widget
+  categories_counter = true # Enable counter for each category in "Categories" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  cached = false # activate cache if true
+  # Enable parts of social widget
+  facebook = "username"
+  twitter = "username"
+  instagram = "username"
+  linkedin = "username"
+  telegram = "username"
+  github = "username"
+  gitlab = "username"
+  bitbucket = "username"
+  email = "example@example.com"
+
+# Custom social links
+[[Params.widgets.social.custom]]
+  title = "Youtube"
+  url = "https://youtube.com/user/username"
+
+[[Params.widgets.social.custom]]
+  title = "My Home Page"
+  url = "https://example.com"
+
+[Params.widgets.search]
+  cached = true # activate cache if true
+  url = "https://google.com/search"
+  [Params.widgets.search.input]
+    name = "sitesearch"
+    pre = ""
